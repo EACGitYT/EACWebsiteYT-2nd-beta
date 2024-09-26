@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+  font-family: Roboto;
+}
+
+pre, p{
+  font-family: Roboto;
+}
+
+header{
+  animation: header-anim 2s;
+  background-color: #3ff42f;
+}
+
+.header-nav a:hover{
+  border-color: #1f2937;
+  background: #1f2937;
+  color: #fff;
+}
+
+.header-nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  color: #000;
+}
+
+.header-nav a{
+  text-decoration: none;
+  color: black;
+}
+
+.header-menu{
+  display:flex;
+  gap: 5vw;
+  gap: 28px; 
+}
+
+.header-menu a{
+  font-size: 24px;
+}
+
+.image-logo{
+  display: flex;
+  gap: 10px;
+  object-fit: cover;
+}
+
+.image-logo > img{
+  width: 24px;
+  object-fit: cover;
+}
+
+.image-logo a{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.about{
+  background-color: #55a85d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  animation: about-anim 2s;
+}
+
+.about > img{
+  width: 30%;
+  object-fit: cover;
+  animation: about-anim-img 2s;
+}
+
+.about .about-text{
+  width: 65%;
+  font-size: 28px;
+}
+
+@keyframes about-anim{
+  from {background: white};
+  to {background-color: #55a85d};
+}
+
+@keyframes about-anim-img{
+  from {opacity: 0};
+  to {opacity: 1};
+}
+
+.stumble-guys{
+  font-size: 25px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.stumble-guys .stumble-guys-text{
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.stumble-guys > img{
+  width: 1280px;
+  height: 720px;
+  float:right;
+  object-fit: cover;
+}
+
+.stumble-guys .stumble-guys-logo{
+  position: relative;
+  top: 20px;
+}
+
+.call-of-duty{
+  width: auto;
+  height: auto;
+  background-color: #55a85d;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: codanim 2s;
+}
+
+@keyframes codanim{
+  from {background-color: white};
+  to {background-color: #55a85d};
+}
+
+.call-of-duty img{
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  position: sticky;
+}
+
+.call-of-duty .codmw-series-logo{
+  position: relative;
+  top: -1px;
+
+}
+
+.codmw-series-logo .mwr-logo{
+  position: relative;
+  top: 0px;
+  width: 20vw;
+  height: 10vh;
+}
+
+.codmw-series-logo .codmw2cr-logo{
+  position: relative;
+  top: -10vh; 
+  left: 10vw;
+  width: 35vw;
+  height: auto; 
+}
+
+.mw3-logo{
+  position: relative; 
+  top: -17vh; 
+  left: 34vw;
+  width: 20vw;
+  height: auto;
+}
+
+.call-of-duty-text{
+  position: relative;
+  top: -55vh;
+  left: 50vw;
+}
+
+@media (max-width: 768px) {
+  .codmw-series-logo .codmw2cr-logo {
+    width: 50vw;
+    height: auto;
+  }
+
+  .mw3-logo {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+.roblox{
+  overflow: hidden;
+}
+
+.roblox > img{
+  width: 1280px;
+  height: 720px;
+  float: right;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+}
+
+.roblox-logo{
+  position: sticky;
+  display: flex;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Scratch {
+  position: sticky;
+  display: inline-block;
+  background-color: #FFD700;
+}
+
+.Scratch > iframe {
+  position: sticky;
+  background-color: #FFD700;
+}
+
+.Scratch > figcaption {
+  position: sticky;
+  left: 400px;
+}
+
+@media (max-width: 1024px) {
+  .header-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .about-text {
+    font-size: 1.25rem;
+  }
+
+  .call-of-duty-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .call-of-duty img,
+  .codmw-series-logo img {
+    max-width: 100%;
+  }
+
+  .about .about-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-menu a {
+    font-size: 20px;
+  }
+
+  .about .about-text {
+    font-size: 1rem;
+  }
+
+  .stumble-guys img {
+    max-width: 100%;
+    height: auto;
+  }
+}
